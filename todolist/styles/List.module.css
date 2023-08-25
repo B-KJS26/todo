@@ -1,0 +1,63 @@
+.userlist {
+    display: flex;
+    width: 40%;
+    background: linear-gradient(to bottom, #CCE1FF, #90AFFF);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  .listbox {
+    margin-top: 5%;
+    width: 90%;
+    height: 120px;
+    background-color: white;
+    border: 0;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basics: 10%;
+  }
+  .listname {
+    margin-left: 5%;
+    font-family: "Haepa";
+    font-size: 2rem;
+  }
+  .imgbutton {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin: 4.5%;
+  }
+  .completebutton {
+    width: 3rem;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+  }
+  
+  .completebutton:hover {
+    transform: scale(1.1);
+  }
+  
+  .deletebutton {
+    margin-left: 1rem;
+    width: 3rem;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+  }
+  
+  .deletebutton:hover {
+    transform: scale(1.1);
+  }
+  
+  .plusbutton {
+    margin: 5%;
+    width: 10%;
+    cursor: pointer;
+  }
+  .plusbutton:hover {
+    transition: all ease-in-out .3s;
+    transform: scale(1.1);
+  }
