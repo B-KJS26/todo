@@ -1,11 +1,5 @@
-.userlist {
-    display: flex;
-    width: 40%;
-    background: linear-gradient(to bottom, #CCE1FF, #90AFFF);
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-  }
+
+
   .listbox {
     margin-top: 5%;
     width: 90%;
@@ -52,12 +46,3 @@
     transform: scale(1.1);
   }
   
-  .plusbutton {
-    margin: 5%;
-    width: 10%;
-    cursor: pointer;
-  }
-  .plusbutton:hover {
-    transition: all ease-in-out .3s;
-    transform: scale(1.1);
-  }
