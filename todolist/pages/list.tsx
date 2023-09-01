@@ -1,10 +1,8 @@
-import { NextPage } from "next";
 import styles from '../styles/List.module.css';
-import { json } from "stream/consumers";
-import { useEffect, useState, useContext } from 'react';
+import { useState, useEffect, useRef, forwardRef, useImperativeHandle } from 'react';
 
-const List = () => {
-    const [userlist, setUserlist] = useState([]);
+const List = forwardRef((props, ref) => {
+    const [userlist, setUserlist] = useState<any[]>([]);
     function getposting() {
         const xhr = new XMLHttpRequest(); // XMLHttpRequest 객체 생성
         xhr.open("GET", "http://localhost:5000/lists");
@@ -13,21 +11,30 @@ const List = () => {
         xhr.onload = () => {
             if (xhr.status === 200) {
                 const res = JSON.parse(xhr.response);
-                const descriptions = res.map((item: any) => item.description); // 각 인덱스의 description 값만 추출
-                setUserlist(descriptions);
+                console.log("OK");
+                setUserlist(res);
             } else {
+                console.log("BAD");
                 console.log(xhr.status, xhr.statusText);
             }
         }
     }
+    function childFunction() {
+        getposting();
+    }
+
+    useImperativeHandle(ref, () => ({
+        childFunction
+    }));
+
     useEffect(() => {
         getposting();
     }, []);
     return (
         <>
             {userlist.map(todolist => (
-                <div key={todolist} className={styles.listbox}>
-                    <p className={styles.listname}>{todolist}</p>
+                <div key={todolist.id} className={styles.listbox}>
+                    <p className={styles.listname}>{todolist.description}</p>
                     <div className={styles.imgbutton}>
                         <img src="/images/yes.png" className={styles.completebutton} onClick={getposting}></img>
                         <img src="/images/remove.png" className={styles.deletebutton}></img>
@@ -36,6 +43,6 @@ const List = () => {
             ))}
         </>
     )
-}
+});
 
 export default List;
