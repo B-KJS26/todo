@@ -1,3 +1,4 @@
+import { todo } from 'node:test';
 import styles from '../styles/List.module.css';
 import { useState, useEffect, useRef, forwardRef, useImperativeHandle } from 'react';
 
@@ -19,6 +20,24 @@ const List = forwardRef((props, ref) => {
             }
         }
     }
+    function deletelist(index: any) {
+        console.log(index + '번째');
+    	const xhr = new XMLHttpRequest();
+
+    	xhr.open("DELETE", `http://localhost:5000/lists/${index}`);
+    	xhr.getResponseHeader("content-type");
+    	xhr.send();
+    	xhr.onload = () => {
+            console.log('h');
+    		if (xhr.status === 200) {
+              const res = JSON.parse(xhr.response);
+              console.log(res);
+              getposting();
+        	} else {
+    		  console.log(xhr.status, xhr.statusText);
+       		}
+        }
+    }
     function childFunction() {
         getposting();
     }
@@ -32,12 +51,12 @@ const List = forwardRef((props, ref) => {
     }, []);
     return (
         <>
-            {userlist.map(todolist => (
+            {userlist.map((todolist) => (
                 <div key={todolist.id} className={styles.listbox}>
                     <p className={styles.listname}>{todolist.description}</p>
                     <div className={styles.imgbutton}>
                         <img src="/images/yes.png" className={styles.completebutton} onClick={getposting}></img>
-                        <img src="/images/remove.png" className={styles.deletebutton}></img>
+                        <img src="/images/remove.png" className={styles.deletebutton} onClick={() => deletelist(todolist.id)}></img>
                     </div>
                 </div>
             ))}
