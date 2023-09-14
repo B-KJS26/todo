@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
 import { useRef, useState } from 'react'
 import List from './list'
-
+import axios from 'axios';
 
 const Home: NextPage = () => {
   const myRef = useRef<any | null>(null);
@@ -24,20 +24,14 @@ const Home: NextPage = () => {
     dataloading();
   }
   function postData() {
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:5000/lists");
-    xhr.setRequestHeader("content-type", "application/json; charset=UTF-8")
     //db.json 파일의 lists 객체에 있는 key가 id인 값은 유일한 값이라서 안넣어줘도 자동으로 생성됨.
     const data = { description: `${adddata}`, complete: 'no' };
-    xhr.send(JSON.stringify(data));
-    xhr.onload = () => {
-      if (xhr.status === 201) {
-        const res = JSON.parse(xhr.response);
-        console.log(res);
-      } else {
-        console.log(xhr.status, xhr.statusText);
-      }
-    }
+    axios.post("http://localhost:5000/lists", data)
+    .then((Response) => {
+      console.log(Response);
+    }).catch((Error) =>{
+      console.log(Error);
+    })
   }
 
   return (
