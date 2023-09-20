@@ -33,11 +33,11 @@ const List = forwardRef((props, ref) => {
     return (
         <>
             {userlist.map((todolist) => (
-                <div key={todolist.id} className={styles.listbox}>
-                    <p className={styles.listname}>{todolist.description}</p>
-                    <div className={styles.imgbutton}>
-                        <img src="/images/yes.png" className={styles.completebutton} onClick={getposting}></img>
-                        <img src="/images/remove.png" className={styles.deletebutton} onClick={() => deletelist(todolist.id)}></img>
+                <div key={todolist.id} className="mt-5 w-10/12 h-20 bg-white rounded-lg whitespace-nowrap flex flex-row justify-start items-center basis-1/12">
+                    <p className="ml-5 font-Haepa text-2xl">{todolist.description}</p>
+                    <div className="flex flex-1 justify-end m-4">
+                        <img src="/images/yes.png" className="w-12 cursor-pointer transition duration-200 ease-in-out hover:scale-110" onClick={getposting}></img>
+                        <img src="/images/remove.png" className="ml-4 w-12 cursor-pointer transition duration-200 ease-in-out hover:scale-110" onClick={() => deletelist(todolist.id)}></img>
                     </div>
                 </div>
             ))}
