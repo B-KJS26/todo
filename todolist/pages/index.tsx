@@ -9,16 +9,16 @@ const Home: NextPage = () => {
   const dataloading = () => {
     myRef.current.childFunction();
   }
-  const [Opening, setOpening] = useState(false);
+  const [opening, setOpening] = useState(false);
   const [adddata, setAdddata] = useState('');
   const openModal = () => {
-    setOpening(!Opening);
+    setOpening(!opening);
   }
   const cancelbutton = () => {
-    setOpening(!Opening);
+    setOpening(!opening);
   }
   const addtodolist = () => {
-    setOpening(!Opening);
+    setOpening(!opening);
     console.log(adddata);
     postData();
     dataloading();
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             오늘의 <span className="text-6xl text-white drop-shadow-3xl">할 일</span>을 등록해주세요
           </h2>
         </main>
-        {Opening ? <div className="fixed flex justify-center items-center top-0 left-0 right-0 bottom-0 z-10 bg-neutral-300 bg-opacity-50">
+        {opening ? <div className="fixed flex justify-center items-center top-0 left-0 right-0 bottom-0 z-10 bg-neutral-300 bg-opacity-50">
           <div className="z-10 w-7/12 h-3/4 rounded-lg bg-white justify-center items-center text-right pr-20">
             <p className="z-auto font-Nexa text-4xl ml-20 mt-10" onClick={cancelbutton}>X</p>
             <input placeholder='Write what are you going to do' className="w-10/12 h-1/6 mt-20 mr-12 pl-4" onChange={(e) => setAdddata(e.target.value)}></input>
