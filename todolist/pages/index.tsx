@@ -25,7 +25,7 @@ const Home: NextPage = () => {
   }
   function postData() {
     //db.json 파일의 lists 객체에 있는 key가 id인 값은 유일한 값이라서 안넣어줘도 자동으로 생성됨.
-    const data = { description: `${adddata}`, complete: 'no' };
+    const data = { description: `${adddata}`, complete: false };
     axios.post("http://localhost:5000/lists", data)
     .then((Response) => {
       console.log(Response);
