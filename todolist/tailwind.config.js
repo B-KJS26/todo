@@ -23,6 +23,11 @@ module.exports = {
         '90': '50rem',
       }
     },
+    screens: {
+      sm: { min: "0px", max: "425px" },
+      md: { min: "425px", max: "768px" },
+      lg: { min: "768px" },
+    },
   },
   plugins: [],
 }
