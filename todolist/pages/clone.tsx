@@ -47,8 +47,12 @@ export const Clone: React.FC = () => {
                     <li className="mb-4">
                         {/**
                          * 폰트 사이즈가 다르다.
+                         *
+                         * 1. margin
+                         * 2. flex, justify-between
                          */}
-                        <div className="flex">
+
+                        <div>
                             <h4 className="table-cell text-white pr-10 text-5xl font-normal align-top tracking-wide md:text-xl sm:text-xl">
                                 2020
                             </h4>
