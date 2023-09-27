@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = { 
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "../clone/*.{html}"
   ],
   theme: {
     fontFamily: {
@@ -29,6 +30,6 @@ module.exports = {
       lg: { min: "768px" },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 }
 
