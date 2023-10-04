@@ -23,8 +23,13 @@ module.exports = {
             margin: {
                 90: "50rem",
             },
+            backgroundImage: {
+                'janda': "url('/images/JANDA.png')"
+            },
         },
         screens: {
+            mdt: { max: '1280px'},
+            wmob: { max: '960px' },
             dt: { max: '992px'},
             mob: {max: '680px'}
         },

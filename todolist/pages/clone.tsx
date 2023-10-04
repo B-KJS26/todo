@@ -5,13 +5,13 @@ export const Clone: React.FC = () => {
         <section className="mx-auto max-w-screen-xl">
             {/**
              * pl-16 pr-16 -> px-16
-             * dt -> 테일윈드에 쓰는 규칙이 있음
+             * md -> 테일윈드에 쓰는 규칙이 있음
              * break point -> 768px 되어있음. 원래는 원본에 맞추는게 맞는데, * min-992로 맞추는게 좋겠다.
              */}
             <div className="flex h-screen px-16 min-w-full bg-neutral-700 items-center dt:flex-col dt:p-12 dt:pt-32">
                 {/**
                  * tracking-normal 삭제
-                 * dt:h-1/6,sm:h-1/6
+                 * md:h-1/6,sm:h-1/6
                  */}
                 <div className="flex w-6/12 flex-col h-full dt:h-1/6 lg:pr-30 justify-center dt:text-center dt:w-full">
                     {/**
