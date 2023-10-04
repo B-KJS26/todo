@@ -23,12 +23,17 @@ module.exports = {
             margin: {
                 90: "50rem",
             },
+            backgroundImage: {
+                'janda': "url('/images/JANDA.png')"
+            },
         },
         screens: {
-            sm: { min: "0px", max: "425px" },
-            md: { min: "425px", max: "768px" },
-            lg: { min: "768px" },
+            mdt: { max: '1280px'},
+            wmob: { max: '960px' },
+            smob: { max: '480px'},
+            dt: { max: '992px'},
+            mob: {max: '680px'}
         },
     },
-    plugins: [require("tailwind-scrollbar-hide")],
+    plugins: [],
 };

@@ -21,7 +21,7 @@ const List = (props: any) => {
     }
     return (
         <ul className="w-10/12 pt-0 md:pt-4 sm:pt-4 [&>*:first-child]:mt-0" >
-            {props.listdata.map((todolist: any) => (
+            {props.listdata && props.listdata.map((todolist: any) => (
                 <li key={todolist.id} className={ 
                     todolist.complete ? "p-5 mt-3 w-full h-20 sm:w-10/12 sm:h-10 md:w-10/12 md:h-14 bg-green-300 rounded-lg whitespace-nowrap flex flex-row justify-start items-center" 
                     : "mt-3 w-full p-5 sm:h-10 md:h-14 h-20 sm:p-2 md:p-3 bg-white rounded-lg whitespace-nowrap flex flex-row justify-start items-center"}>
