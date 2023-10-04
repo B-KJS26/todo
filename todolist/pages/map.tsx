@@ -48,9 +48,9 @@ export const Map: React.FC = () => {
                 <div className="hidden wmob:block w-full py-24 px-16">
                     <div className="flex flex-col justify-center items-center border-solid border-black border-t-2">
                         <div className="w-full max-w-lg text-center pt-12 px-2">
-                            <p className="text-3xl">진료시간 및 오시는 길 안내</p>
+                            <p className="text-3xl smob:text-2xl">진료시간 및 오시는 길 안내</p>
                         </div>
-                        <div className="w-full max-w-lg pt-12 border-solid border-black border-t mt-12 mb-4 px-2">
+                        <div className="w-full max-w-lg pt-12 border-solid border-black border-t mt-12 mb-4 px-2 smob:border-0">
                             <p className="text-xl text-gray-400">진료시간 안내</p>
                         </div>
                         <div className="w-full max-w-lg px-2 text-xl">
@@ -67,7 +67,7 @@ export const Map: React.FC = () => {
                                 <span className="font-mideum tracking-wide">09:00 ~ 18:00</span>
                             </p>
                         </div>
-                        <div className="w-full max-w-lg mt-12 mb-4 px-2">
+                        <div className="w-full max-w-lg mt-12 mb-4 px-2 smob:border-solid smob:border-black smob:border-t smob:pt-12">
                             <p className="font-medium text-xl text-gray-400">오시는 길</p>
                         </div>
                         <div className="flex items-end justify-between w-full max-w-lg flex-wrap px-2">
