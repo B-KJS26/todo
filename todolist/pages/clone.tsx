@@ -1,74 +1,41 @@
 import React from "react";
 
+/**
+ *
+ * https://www.movementk.com/index.php?cont=five
+ */
+
 export const Clone: React.FC = () => {
     return (
         <section className="mx-auto max-w-screen-xl">
-            {/**
-             * pl-16 pr-16 -> px-16
-             * md -> 테일윈드에 쓰는 규칙이 있음
-             * break point -> 768px 되어있음. 원래는 원본에 맞추는게 맞는데, * min-992로 맞추는게 좋겠다.
-             */}
-            <div className="flex h-screen lg:flex-row lg:px-16 lg:p-0 min-w-full bg-neutral-700 items-center flex-col p-12 pt-32">
-                {/**
-                 * tracking-normal 삭제
-                 * md:h-1/6,h-1/6
-                 */}
-                <div className="flex lg:w-6/12 flex-col lg:h-full h-1/6 lg:text-start pr-30 justify-center text-center w-full">
-                    {/**
-                     * * h4 -> 이전 단계가 안나왔는데 h4는 지양
-                     *   폰트 사이즈가 다르다.
-                     */}
-                    <p className="lg:text-8xl font-light tracking-wide leading-none lg:mb-8 text-white md:text-7xl md:mb-5 text-4xl mb-2.5">
+            <div className="flex h-screen px-16 min-w-full bg-neutral-700 items-center dt:flex-col dt:p-12 dt:pt-32">
+                <div className="flex w-6/12 flex-col h-full dt:h-1/6 lg:pr-30 justify-center dt:text-center dt:w-full">
+                    <p className="text-8xl font-light tracking-wide leading-none mb-8 text-white dt:text-7xl dt:mb-5 mob:text-4xl mob:mb-2.5">
                         Awards
                     </p>
-                    {/**
-                     * break-keep -> break-keep
-                     */}
-                    <p className="lg:text-xl font-light break-keep leading-7 tracking-tighter text-neutral-400 md:text-lg text-sm">
+
+                    <p className="text-xl font-light break-keep leading-7 tracking-tighter text-neutral-400 dt:text-lg mob:text-sm">
                         고객과 고객의 고객까지 만족시키는
                         <br /> 창의적인 디자인, 감각적인 움직임을 약속합니다.
                     </p>
                 </div>
-                {/**
-                 * touch-pinch-zoom : 굳이 안해도 됀다.
-                 *  inline-block, align-middle : 필요없다.
-                 *
-                 */}
-                    <ul className="m-0 p-0 lg:w-6/12 h-[700px] overflow-y-scroll 6/12 h-4/6 mt-10 md:mt-16 md:w-9/12 overflow-auto">
-                        {/**
-                     * li에는은 안된다.
-                     * fist-child는 margin 0으로 해야한다.
-                     * 단위를 테일윈드 유닛으로 맞춰야한다.
-                     * flex또는 div로 감싸서 div flex로 해야한다. -> gap 또는 wimdh를 주고 justify-between으로 해야한다.
-                     * list를 가운데로 맞춰주면 좋을 것 같다.
-                     * 연도와 수상내역이 라인이 안맞다.
-                     */}
-                     
-                     <div className="flex flex-col gap-14">
+                <ul className="m-0 p-0 w-6/12 h-[700px] overflow-y-scroll sm:w-full sm:h-4/6 dt:mt-16 dt:w-9/12 overflow-auto">
+                    <div className="flex flex-col gap-14">
                         <li className="flex">
-                        {/**
-                         * 폰트 사이즈가 다르다.
-                         *
-                         * 1. margin
-                         * 2. flex, justify-between
-                         */}
-                                <h2 className="text-white lg:text-5xl -mt-1 font-normal lg:pr-14 tracking-wide md:text-4xl md:pr-10 pr-6 text-2xl">
-                                    2020
-                                </h2>
-                                <ul className="text-gray">
-                                    {/**
-                                 * 폰트 사이즈가 다르다.
-                                 */}
-                                    <li className="mb-3.5 text-neutral-400 font-light break-keep tracking-tight lg:text-base md:text-sm text-xs">
-                                        정부3.0서비스융합 부문 통합대상 수상(원더코드)
-                                    </li>
-                                    <li className="mb-3.5 text-neutral-400 font-light break-keep tracking-tight lg:text-base md:text-sm text-xs">
-                                        인프라/아키텍처 부문 인프라/아키텍처 수상(SRC 병원(본원))
-                                    </li>
-                                    <li className="mb-3.5 text-neutral-400 font-light break-keep tracking-tight lg:text-base md:text-sm text-xs">
-                                        디지털콘텐츠솔루션 부문 금상 수상(UBASE)
-                                    </li>
-                                </ul>
+                            <h2 className="text-white text-5xl -mt-1 font-normal pr-14 tracking-wide dt:text-4xl dt:pr-10 mob:pr-6 mob:text-2xl">
+                                2020
+                            </h2>
+                            <ul className="text-gray">
+                                <li className="leading-6 mb-3.5 text-white opacity-60 font-light break-all tracking-tight dt:text-base mob:text-sm">
+                                    정부3.0서비스융합 부문 통합대상 수상(원더코드)
+                                </li>
+                                <li className="leading-6 mb-3.5 text-white opacity-60 font-light break-all tracking-tight dt:text-base mob:text-sm">
+                                    인프라/아키텍처 부문 인프라/아키텍처 수상(SRC 병원(본원))
+                                </li>
+                                <li className="leading-6 mb-3.5 text-white opacity-60 font-light break-all tracking-tight dt:text-base mob:text-sm">
+                                    디지털콘텐츠솔루션 부문 금상 수상(UBASE)
+                                </li>
+                            </ul>
                         </li>
                         <li className="flex">
                             <h2 className="text-white lg:text-5xl -mt-1 font-normal lg:pr-14 md:text-4xl md:pr-10 pr-6 text-2xl">
@@ -208,8 +175,8 @@ export const Clone: React.FC = () => {
                                 </li>
                             </ul>
                         </li>
-                        </div>
-                    </ul>
+                    </div>
+                </ul>
             </div>
         </section>
     );
