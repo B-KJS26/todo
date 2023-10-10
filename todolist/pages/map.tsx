@@ -8,7 +8,7 @@ export const Map: React.FC = () => {
     return (
         <section className="mx-auto max-w-screen-xl">
   <div className="flex md:px-8 md:w-full max-w-full md:space-between md:h-screen md:bg-gradient-to-t md:from-lime-50 md:to-white bg-none md:flex-row flex-col-reverse h-auto p-0">
-    <div className="md:w-6/12 md:h-full md:pt-32 md:pb-36 md:px-12 text-center items-center justify-center md:pb-24 md:px-8 h-96 w-full p-0 mb-12">
+    <div className="md:w-6/12 md:h-full md:pt-32  text-center items-center justify-center md:pb-24 md:px-8 h-96 w-full p-0 mb-12">
       <div className="overflow-hidden w-full h-full">
         <img src="/images/JANDA.png" alt="JANDA" className="mx-auto w-full transform transition-transform ease-in-out" />
       </div>

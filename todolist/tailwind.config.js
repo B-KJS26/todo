@@ -17,6 +17,7 @@ module.exports = {
             colors: {
                 "modal-bg": "#243c5a",
                 "button-bg": "#E6E6FA",
+                "text-col": "#175FE8",
                 first: "#CCE1FF",
                 second: "#90AFFF",
             },
@@ -26,6 +27,10 @@ module.exports = {
             backgroundImage: {
                 'janda': "url('/images/JANDA.png')"
             },
+            padding: {
+                '35': '35%',
+                '138': '138%'
+            }
         },
         
     },

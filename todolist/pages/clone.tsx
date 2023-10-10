@@ -34,7 +34,7 @@ export const Clone: React.FC = () => {
                  *  inline-block, align-middle : 필요없다.
                  *
                  */}
-                    <ul className="m-0 p-0 lg:w-6/12 h-[700px] overflow-y-scroll 6/12 h-4/6 mt-10 md:mt-16 md:w-9/12 overflow-auto">
+                    <ul className="m-0 p-0 lg:w-6/12 h-[700px] overflow-y-scroll 6/12 mt-10 md:mt-16 md:w-9/12 overflow-auto">
                         {/**
                      * li에는은 안된다.
                      * fist-child는 margin 0으로 해야한다.
