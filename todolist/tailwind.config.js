@@ -26,10 +26,6 @@ module.exports = {
             },
             backgroundImage: {
                 'janda': "url('/images/JANDA.png')"
-            },
-            padding: {
-                '35': '35%',
-                '138': '138%'
             }
         },
         
