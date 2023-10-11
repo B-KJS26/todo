@@ -2,7 +2,7 @@ import React from "react";
 
 /**
  *
- * https://www.movementk.com/index.php?cont=five
+ 
  */
 
 export const Clone: React.FC = () => {
