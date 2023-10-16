@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                                 onChange={(e) => setAdddata(e.target.value)}
                             ></input>
                             <button
-                                className="w-4/12 h-20 ml-20 mt-48 font-Haepa text-2xl rounded-lg bg-button-bg sm:mt-8 sm:w-10/12 md:w-10/12 sm:h-12 md:h-12 sm:mt-20 md:mt-20 sm:text-xs md:text-xs sm:ml-12 md:ml-12"
+                                className="w-4/12 h-20 ml-20 mt-48 font-Haepa text-2xl rounded-lg bg-button-bg sm:w-10/12 md:w-10/12 sm:h-12 md:h-12 sm:mt-20 md:mt-20 sm:text-xs md:text-xs sm:ml-12 md:ml-12"
                                 onClick={addtodolist}
                             >
                                 추가하기
