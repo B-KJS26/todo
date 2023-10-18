@@ -20,6 +20,7 @@ module.exports = {
                 "text-col": "#175FE8",
                 first: "#CCE1FF",
                 second: "#90AFFF",
+                "coloring": "#BE9F82"
             },
             margin: {
                 90: "50rem",
