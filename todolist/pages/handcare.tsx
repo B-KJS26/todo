@@ -4,7 +4,7 @@ export const Handcare: React.FC = () => {
     return (
         <section className="mx-auto max-w-screen-xl">
             {/* 헤더와 메인페이지 */}
-            <section className="h-auto relative">
+            <section className="h-[640px] md:h-[760px] lg:h-[920px] relative bg-cover bg-center bg-no-repeat bg-[url('/images/handcare/1.jpg')] flex items-center ">
                 {/* 헤더 */}
                 <header className="absolute flex w-full max-w-screen-xl top-0 h-32 items-center text-center justify-between">
                     <div className="min-w-[100px] w-[150px] flex justify-center">
@@ -28,7 +28,7 @@ export const Handcare: React.FC = () => {
                             </ul>
                         </nav>
                     </div>
-                    <div className="hidden md:flex justify-end px-5">
+                    <div className="hidden md:flex md:justify-end px-5">
                         <a
                             href="https://www.kakaocorp.com/page/service/service/KakaoTalk"
                             className="mx-1.5"
@@ -57,7 +57,7 @@ export const Handcare: React.FC = () => {
                         </svg>
                     </div>
                 </header>
-                <div className="h-[640px] md:h-[760px] lg:h-[920px] p-10 text-4xl lg:text-5xl text-white font-bold bg-cover bg-center bg-no-repeat bg-[url('/images/handcare/1.jpg')] flex flex-col justify-end">
+                <div className=" p-10 text-4xl lg:text-5xl text-white font-bold  flex flex-col justify-end">
                     <div>
                         <h2>
                             I'll make you
@@ -65,10 +65,10 @@ export const Handcare: React.FC = () => {
                             beautiful hands.
                         </h2>
                     </div>
-                    <div className="flex w-full h-60 md:h-72 lg:h-96 justify-center items-end">
-                        <div className="w-4 h-4 bg-white rounded-full mr-2"></div>
-                        <div className="w-4 h-4 bg-black border-white-400 border-2 rounded-full mx-2"></div>
-                    </div>
+                </div>
+                <div className="absolute bottom-10 right-1/2 flex ">
+                    <div className="w-4 h-4 bg-white rounded-full mr-2"></div>
+                    <div className="w-4 h-4 bg-black border-white-400 border-2 rounded-full mx-2"></div>
                 </div>
             </section>
             <main>
