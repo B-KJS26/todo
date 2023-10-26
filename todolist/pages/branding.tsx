@@ -5,7 +5,7 @@ export const Branding: React.FC = () => {
             <div className='relative'>
                 <header className='fixed h-16 lg:h-24 w-full max-w-screen-xl flex bg-white'>
                     <div className="md:hidden w-2/12 flex flex-row justify-center items-center  cursor-all">
-                        <svg 
+                        <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                             fill="#7C7C7C"
@@ -14,7 +14,7 @@ export const Branding: React.FC = () => {
                             <path
                                 fillRule="evenodd"
                                 d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                                clipRule="evenodd" 
+                                clipRule="evenodd"
                             />
                         </svg>
                     </div>
@@ -28,7 +28,7 @@ export const Branding: React.FC = () => {
                         <nav className='m-0 ml-auto md:h-16 lg:h-24'>
                             <ul className='flex'>
                                 <li>
-                                    <a 
+                                    <a
                                         href=''
                                         className='px-12 flex md:h-16 lg:h-24 items-center'>
                                         about
@@ -42,7 +42,7 @@ export const Branding: React.FC = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a 
+                                    <a
                                         href=''
                                         className='px-12 flex md:h-16 lg:h-24 items-center'>
                                         contact
@@ -54,8 +54,8 @@ export const Branding: React.FC = () => {
                 </header>
                 <main>
                     <div className='w-full h-auto pt-[75px] md:pt-[150px] pb-5 md:pb-[25px] flex flex-col bg-white'>
-                        <div className='flex flex-col md:flex-row'>
-                            <div className='w-full md:w-1/3 h-[446px] md:h-auto p-7 lg:px-14 flex flex-col'>
+                        <div className='grid grid-cols-1 grid-rows-6 md:grid-cols-3 md:grid-rows-2 gap-y-12 md:gap-x-20 lg:gap-x-32 px-14'>
+                            <div className='w-full h-[446px] md:h-auto flex flex-col'>
                                 <p className='text-lg font-bold'>
                                     Website
                                 </p>
@@ -63,13 +63,13 @@ export const Branding: React.FC = () => {
                                     2020
                                 </p>
                                 <div className='h-full md:h-[480px] items-center flex overflow-hidden'>
-                                    <img 
+                                    <img
                                         src='https://cdn.quv.kr/mtzteubf9/up/6018b3e1077ba_1920.jpg'
-                                        className='w-full h-full object-cover md:h-auto' 
+                                        className='w-full h-full object-cover md:h-auto'
                                     />
                                 </div>
                             </div>
-                            <div className='w-full md:w-1/3 h-[446px] md:h-auto p-7 lg:px-14 flex flex-col'>
+                            <div className='w-full h-[446px] md:h-auto flex flex-col'>
                                 <p className='text-lg font-bold'>
                                     Mobile graphic
                                 </p>
@@ -77,13 +77,13 @@ export const Branding: React.FC = () => {
                                     2020
                                 </p>
                                 <div className='h-full md:h-[480px] items-center flex overflow-hidden'>
-                                    <img 
-                                        src='https://cdn.quv.kr/mtzteubf9/up/6018b3e10839a_1920.jpg' 
-                                        className='w-full h-full object-cover md:h-auto' 
+                                    <img
+                                        src='https://cdn.quv.kr/mtzteubf9/up/6018b3e10839a_1920.jpg'
+                                        className='w-full h-full object-cover md:h-auto'
                                     />
                                 </div>
                             </div>
-                            <div className='w-full md:w-1/3 h-[446px] md:h-auto p-7 lg:px-14 flex flex-col'>
+                            <div className='w-full h-[446px] md:h-auto flex flex-col'>
                                 <p className='text-lg font-bold'>
                                     Mobile UI/UX
                                 </p>
@@ -91,15 +91,13 @@ export const Branding: React.FC = () => {
                                     2019
                                 </p>
                                 <div className='h-full md:h-[480px] items-center flex overflow-hidden'>
-                                    <img 
+                                    <img
                                         src='https://cdn.quv.kr/mtzteubf9/up/6018b3e111262_1920.jpg'
-                                        className='w-full h-full object-cover md:h-auto' 
+                                        className='w-full h-full object-cover md:h-auto'
                                     />
                                 </div>
                             </div>
-                        </div>
-                        <div className='flex flex-col md:flex-row '>
-                            <div className='w-full md:w-1/3 h-[446px] md:h-auto p-7 lg:px-14 flex flex-col'>
+                            <div className='w-full h-[446px] md:h-auto flex flex-col'>
                                 <p className='text-lg font-bold'>
                                     Watch UI/UX
                                 </p>
@@ -107,13 +105,13 @@ export const Branding: React.FC = () => {
                                     2019
                                 </p>
                                 <div className='h-full md:h-[480px] items-center flex overflow-hidden'>
-                                    <img 
+                                    <img
                                         src='https://cdn.quv.kr/mtzteubf9/up/6018b3e12b932_1920.jpg'
-                                        className='w-full h-full object-cover md:h-auto' 
+                                        className='w-full h-full object-cover md:h-auto'
                                     />
                                 </div>
                             </div>
-                            <div className='w-full md:w-1/3 h-[446px] md:h-auto p-7 lg:px-14 flex flex-col'>
+                            <div className='w-full h-[446px] md:h-auto flex flex-col'>
                                 <p className='text-lg font-bold'>
                                     Tab graphic
                                 </p>
@@ -121,13 +119,13 @@ export const Branding: React.FC = () => {
                                     2018
                                 </p>
                                 <div className='h-full md:h-[480px] items-center flex overflow-hidden'>
-                                    <img 
+                                    <img
                                         src='https://cdn.quv.kr/mtzteubf9/up/6018b3e13b1ca_1920.jpg'
                                         className='w-full h-full object-cover md:h-auto'
                                     />
                                 </div>
                             </div>
-                            <div className='md:w-1/3 h-[446px] md:h-auto p-7 lg:px-14 flex flex-col'>
+                            <div className='w-full h-[446px] md:h-auto flex flex-col'>
                                 <p className='text-lg font-bold'>
                                     Mobile app
                                 </p>
@@ -160,7 +158,7 @@ export const Branding: React.FC = () => {
                                     <span className='mb-1'>
                                         NEW BRANDING
                                     </span>
-                                    </p>
+                                </p>
                             </div>
                             <div className='w-full md:w-5/12 h-full flex flex-col pt-10'>
                                 <div className='h-2/6 text-sm lg:text-base'>
@@ -215,11 +213,11 @@ export const Branding: React.FC = () => {
                     </div>
                     <div className='pt-5 md:py-24 w-full h-auto md:h-[750px]'>
                         <div className='md:px-9 h-full flex'>
-                            <img 
-                                src="https://vneikvnief.quv.kr/img/t/62/6018b8f82a8cb_1920.jpg" 
+                            <img
+                                src="https://vneikvnief.quv.kr/img/t/62/6018b8f82a8cb_1920.jpg"
                                 className='w-6/12 object-cover md:pr-1'>
                             </img>
-                            <img 
+                            <img
                                 src='https://vneikvnief.quv.kr/img/t/62/6018b8f82d423_1920.jpg'
                                 className='w-6/12 object-cover md:pl-1'>
                             </img>
