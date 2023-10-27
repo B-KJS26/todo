@@ -293,6 +293,88 @@ export const Application: React.FC = () => {
                         </div>
                     </div>
                 </section>
+                <section className="h-[500px] md:h-[420px] lg:h-[500px] flex flex-col items-center justify-evenly text-center bg-cover bg-center bg-no-repeat bg-fixed bg-[url('https://efefeff.quv.kr/img/t/70/619adde326276_1920.jpg')] text-white px-4 py-16 md:px-0">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="white"
+                        className="w-14 h-14 md:w-16 md:h-16"
+                    >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                    </svg>
+                    <p className='text-3xl md:text-3xl lg:text-4xl '>
+                        Please, make what you want.
+                    </p>
+                    <p className='md:text-sm lg:text-base'>
+                        Lorem ipsum dolor sit amet, nemore sapientem ei qui,
+                        <br />
+                        no pri indoctum prodesset, omnis quidam utroque nam ei.
+                    </p>
+                    <button className='h-11 w-28 md:h-8 md:w-20  lg:h-12 lg:w-28 border-white border-2 md:text-xs lg:text-sm font-bold md:py-1 lg:py-2.5 md:px-2 lg:px-6 mt-4'>
+                        Button
+                    </button>
+                </section>
+                <section className='h-[1200px] md:h-[750px] lg:h-[916px] flex flex-col pt-14 md:p-0'>
+                    <div className='h-1/2 md:pt-20 px-4 md:px-24 flex md:flex-row flex-col justify-between'>
+                        <div className="md:w-4/12 h-full bg-contain bg-center md:bg-cover bg-no-repeat bg-[url('https://efefeff.quv.kr/img/t/70/619ae33bd378d_800.png')]">
+                        </div>
+                        <div className='w-full md:w-7/12 h-full flex flex-col justify-center'>
+                            <p className='text-2xl md:text-2xl lg:text-3xl font-bold'>
+                                Please, make what you want.
+                            </p>
+                            <p className='text-xs md:text-sm mt-6'>
+                                Lorem ipsum dolor sit amet, nemore sapientem ei qui,
+                                <br />
+                                no pri indoctum prodesset, omnis quidam utroque nam ei.
+                                <br />
+                                Ne utamur similique repudiandae eum.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='h-1/2 md:pt-20 px-4 md:px-24 flex md:flex-row flex-col justify-between bg-[#F6F6F6]'>
+                        <div className='w-full md:w-7/12 h-full flex flex-col justify-center items-end text-end'>
+                            <p className='text-2xl md:text-2xl lg:text-3xl font-bold'>
+                                Please, make what you want.
+                            </p>
+                            <p className='text-xs md:text-sm mt-6'>
+                                Lorem ipsum dolor sit amet, nemore sapientem ei qui,
+                                <br />
+                                no pri indoctum prodesset, omnis quidam utroque nam ei.
+                                <br />
+                                Ne utamur similique repudiandae eum.
+                            </p>
+                        </div>
+                        <div className="md:w-4/12 h-full bg-contain bg-center md:bg-cover bg-no-repeat bg-[url('https://efefeff.quv.kr/img/t/70/619ae33bd4f6b_800.png')]">
+                        </div>
+                    </div>
+                    
+                </section>
+                <section className="h-[400px] md:h-80 lg:h-[400px] flex flex-col items-center justify-evenly text-center bg-cover bg-center bg-no-repeat bg-fixed bg-[url('https://efefeff.quv.kr/img/t/70/619aeb3d7b8db_1920.jpg')] text-white py-12 px-4 md:px-0">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-14 h-14 md:w-12 md:h-12 lg:w-14 lg:h-14"
+                    >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 9.75v6.75m0 0l-3-3m3 3l3-3m-8.25 6a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                    </svg>
+                    <p className='text-3xl md:text-4xl'>
+                        Download
+                    </p>
+                    <button className='h-11 w-44 md:h-10 md:w-40 lg:h-12 lg:w-48 border-white font-bold px-3 py-2 bg-gradient-to-r from-[#FF908A] to-[#9873D1] rounded-full mt-4 text-sm  md:text-base lg:text-lg'>
+                        App Store
+                    </button>
+                    <button className='h-11 w-44 md:h-10 md:w-40 lg:h-12 lg:w-48 border-white font-bold px-3 py-2 text-black rounded-full mt-2 bg-white text-sm md:text-base lg:text-lg'>
+                        Play Store
+                    </button>
+                </section>
+                <section className="h-[330px] md:h-[270px] lg:h-[330px] flex flex-col items-center justify-evenly text-center bg-cover bg-center bg-no-repeat  bg-[url('/images/구글.png')] text-white py-12">
+
+                </section>
             </main>
         </section>
     )
