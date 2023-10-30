@@ -294,7 +294,7 @@ export const Application: React.FC = () => {
                     </div>
                 </section>
                 <section className="h-[500px] md:h-[420px] lg:h-[500px] flex flex-col items-center justify-evenly text-center bg-cover bg-center bg-no-repeat bg-fixed bg-[url('https://efefeff.quv.kr/img/t/70/619adde326276_1920.jpg')] text-white px-4 py-16 md:px-0">
-                    <svg 
+                    <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -349,7 +349,7 @@ export const Application: React.FC = () => {
                         <div className="md:w-4/12 h-full bg-contain bg-center md:bg-cover bg-no-repeat bg-[url('https://efefeff.quv.kr/img/t/70/619ae33bd4f6b_800.png')]">
                         </div>
                     </div>
-                    
+
                 </section>
                 <section className="h-[400px] md:h-80 lg:h-[400px] flex flex-col items-center justify-evenly text-center bg-cover bg-center bg-no-repeat bg-fixed bg-[url('https://efefeff.quv.kr/img/t/70/619aeb3d7b8db_1920.jpg')] text-white py-12 px-4 md:px-0">
                     <svg
@@ -373,9 +373,56 @@ export const Application: React.FC = () => {
                     </button>
                 </section>
                 <section className="h-[330px] md:h-[270px] lg:h-[330px] flex flex-col items-center justify-evenly text-center bg-cover bg-center bg-no-repeat  bg-[url('/images/구글.png')] text-white py-12">
-
                 </section>
             </main>
+            <footer className='w-full h-auto'>
+                <section className='md:h-[680px] lg:h-[724px] w-full flex justify-center items-center'>
+                    <div className='h-full w-full md:w-1/2 md:mx-auto flex flex-col px-10 py-14 md:py-16 lg:py-14 lg:px-10 items-center md:text-xs lg:text-sm'>
+                        <p className='text-3xl md:text-3xl lg:text-4xl font-bold'>Contact us</p>
+                        <div className='h-[80px] w-full mt-5'>
+                            <p>Name<span className=' ml-1.5 text-red-600 text-lg'>*</span></p>
+                            <input className='w-full h-8 bg-[#ececec] mt-2 px-3 py-1.5 '></input>
+                        </div>
+                        <div className='h-[80px] mt-5 w-full'>
+                            <p>Email<span className=' ml-1.5 text-red-600 text-lg '>*</span></p>
+                            <input className='w-full h-8 bg-[#ececec] mt-2 px-3 py-1.5'></input>
+                        </div>
+                        <div className='h-[80px] mt-5 w-full'>
+                            <p>Phone number</p>
+                            <input className='w-full h-8 bg-[#ececec] mt-2 px-3 py-1.5'></input>
+                        </div>
+                        <div className='mt-5 w-full'>
+                            <p>Comments</p>
+                            <textarea className='w-full h-28 bg-[#ececec] mt-2 flex flex-col px-3 py-1.5'>
+                            </textarea>
+                        </div>
+                        <button className='w-full h-12 mt-8 bg-[#4723bd] flex justify-center text-white items-center text-base'>
+                            Submit
+                        </button>
+                    </div>
+                </section>
+                <section>
+                    <div className='w-full h-56 flex flex-col'>
+                        <div className='h-1/3 flex justify-center items-center'>
+                            <p className='text-2xl font-bold'>Application</p>
+                        </div>
+                        <div className='h-2/3 flex flex-col items-center text-center text-xs md:text-xs lg:text-sm'>
+                            <p>
+                                상호 : 회사명 ｜ 대표이사 : 홍길동 ｜ 개인정보책임자 : 홍길동
+                                <br />
+                                소재지 : 서울특별시 중구 태평로1가 31
+                                <br />
+                                사업자등록번호 : 123-45-67890 ｜ 통신판매번호 : 서초0000호
+                                <br />
+                                전화 : 1234-5678 (상담시간 - 평일 9:30~18:00, 점심시간 - 12:00~13:00)
+                            </p>
+                            <p className='mt-6'>
+                                COPYRIGHT (C) LOGO. All Rights reserved
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </footer>
         </section>
     )
 }
